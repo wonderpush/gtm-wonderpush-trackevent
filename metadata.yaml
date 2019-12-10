@@ -15,6 +15,6 @@
 homepage: "https://www.wonderpush.com"
 documentation: "https://docs.wonderpush.com/docs/web-push-notifications-google-tag-manager"
 versions:
-  - sha: 43f191d828a4660e1bba1be4943aeb76966e4e2f
+  - sha: a560baf2920ecaba77817d1b4c0ee2815a409902
     changeNotes: |-
       Track a single event with optional attributes.
