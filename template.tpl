@@ -86,6 +86,7 @@ ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 const createQueue = require('createQueue');
 const makeInteger = require('makeInteger');
 const makeNumber = require('makeNumber');
+const makeString = require('makeString');
 
 const WonderPush_push = createQueue('WonderPush');
 
@@ -108,10 +109,10 @@ attributes.forEach(function(item) {
       item.value = makeNumber(item.value);
       break;
     case 'bool':
-      item.value = item.value.trim().toLocaleLowerCase() === 'true';
+      item.value = makeString(item.value).trim().toLocaleLowerCase() === 'true';
       break;
     case 'date':
-      if (item.value.match('^[0-9]{1,13}$') != null) {
+      if (makeString(item.value).match('^[0-9]{1,13}$') != null) {
         item.value = makeInteger(item.value);
       }
       break;
