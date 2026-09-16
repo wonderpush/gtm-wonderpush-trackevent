@@ -111,7 +111,7 @@ attributes.forEach(function(item) {
       item.value = item.value.trim().toLocaleLowerCase() === 'true';
       break;
     case 'date':
-      if (item.value.match('^[0-9]{1,13}$') != null) {
+      if (typeof item.value === 'string' && item.value.match('^[0-9]{1,13}$') != null) {
         item.value = makeInteger(item.value);
       }
       break;
@@ -198,6 +198,6 @@ scenarios: []
 
 ___NOTES___
 
-Created on 12/10/2019, 9:18:07 AM
+Created on 9/16/2026, 11:27:03 AM
 
 
