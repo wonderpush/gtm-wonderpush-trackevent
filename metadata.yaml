@@ -15,6 +15,9 @@
 homepage: "https://www.wonderpush.com"
 documentation: "https://docs.wonderpush.com/docs/web-push-notifications-google-tag-manager"
 versions:
+  - sha: 4a454e1b0d76891497feef6f1845b6fc9e949763
+    changeNotes: |-
+      Fix acceptance of input values for bool_ attributes
   - sha: eeca07f9bfb580a0cd5ab97e6cda6c7a34e54e5b
     changeNotes: |-
       Fix acceptance of timestamps in milliseconds in date_ attributes
